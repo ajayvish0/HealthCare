@@ -1,0 +1,38 @@
+$bg-color: #ffeb3b;
+ol {
+  list-style-type: none;
+  li {
+    margin: 7px 100px;
+    padding: 8px 10px;
+    background-color: #f1faee;
+  }
+}
+
+.evenOrder {
+  li:nth-child(even) {
+    background-color: #57cc99;
+  }
+}
+.oddOrder {
+  li:nth-child(odd) {
+    background-color: #57cc99;
+  }
+}
+
+@mixin fibonacci-bg($numbers) {
+  @each $num in $numbers {
+    li:nth-child(#{$num}) {
+      background-color: $bg-color;
+    }
+  }
+}
+$fibonacci-numbers: 1, 2, 3, 5, 8, 13, 21;
+
+.number-list {
+  @include fibonacci-bg($fibonacci-numbers);
+}
+
+.login-button {
+  background-color: #ffb703;
+  color: #f1faee;
+}

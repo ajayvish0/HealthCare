@@ -1,24 +1,23 @@
 import { Link } from "react-router-dom";
-import LoginInput from "./LoginInput";
+import LoginForm from "../Components/LoginForm";
 
 const Login = () => {
   const user = { name: "aja", email: "ajvish@gmail.com", Password: "abc123" };
 
   return (
-    <section className="Login-container">
-      <div className="Login-card">
-        <h1 className="Login-heading">
+    <section className="LoginContainer">
+      <div className="Card">
+        <h1 className="Heading">
           Welcome to <span>HealthCare</span>
         </h1>
         <p>
           No Account?{" "}
-          <Link to="/signup" className="Link-login">
+          <Link to="/signup" className="Link">
             signup
           </Link>
         </p>
-        <div className="Login-input">
-          <LoginInput user={user} />
-        </div>
+
+        <LoginForm user={user} />
       </div>
     </section>
   );

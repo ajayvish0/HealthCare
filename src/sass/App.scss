@@ -1,0 +1,94 @@
+@use "partial";
+@use "home";
+@use "logic";
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  height: 100%;
+  padding: 5rem 1.5rem;
+}
+.LoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  height: 100vh;
+  padding: 5rem 1.5rem;
+}
+.Card {
+  width: 750px;
+  border-radius: 3%;
+  padding: 1rem;
+  background-color: #ffff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: center;
+}
+
+.Heading {
+  font-size: 30px;
+  padding-top: 15px;
+}
+.Heading span {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  padding-left: 4px;
+
+  color: #57cc99;
+}
+.Link {
+  text-decoration: none;
+  color: #ffb703;
+}
+.Link:hover {
+  cursor: pointer;
+  color: #38a3a5;
+}
+p {
+  font-size: 1rem;
+  padding-top: 0.3rem;
+}
+
+.service-section {
+  padding: 3rem 5rem;
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    color: #57cc99;
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .service-section {
+    padding: 3rem 1.8rem;
+  }
+  .doc-section {
+    padding: 1rem;
+  }
+}
+
+.doc-section {
+  padding: 1rem 5rem;
+  .docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    color: #57cc99;
+  }
+}

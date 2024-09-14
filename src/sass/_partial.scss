@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+  font-style: normal;
+}
+body {
+  background-color: #f1faee;
+}
+@media only screen and (max-width: 600px) {
+  .label {
+    padding: 0.3rem 2rem;
+    margin: 0;
+  }
+  #basic {
+    padding-top: 2rem;
+  }
+  .login-button {
+    padding: 1.2rem 2.5rem;
+    margin-top: 1.9rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .login-button {
+    margin-left: 1.3rem;
+  }
+}
+.login-button {
+  background-color: #ffb703;
+  padding: 1.1rem 2.7rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+}
+label {
+  font-weight: bold;
+}
+#basic {
+  padding-top: 2rem;
+}
+.ant-btn {
+  background-color: #ffb703;
+  padding: 1.2rem 2rem;
+  letter-spacing: 1.2px;
+}
+.ant-form-item {
+  margin: 12px;
+}
+.ant-form {
+  padding: 2rem 0;
+}
